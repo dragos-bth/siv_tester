@@ -17,5 +17,22 @@ optional arguments:
   -i, --init
   -v, --verify
 ```
+*siv_tester* expects that you provide the path to your *siv* executable (SIVEXEC) and a path to a folder where test data and logs will be produced (ENVDIR). For example,
+
+```
+test_siv.py -s ./siv.py -e orig
+```
+
+will attemp to execute a file called `siv.py` located in the current directory. Furthermore, it will create a folder called `orig` in the current directory. The folder will store the test environment.
+
 
 *siv_tester* can be executed in fully automated mode or in semi-automatic mode.
+
+```
+Run "sudo chown" in t.py without being prompted for password
+
+Exec sudo visudo
+Add the following line after the %sudo line:
+
+student  ALL=(ALL) NOPASSWD: /bin/chown
+```
