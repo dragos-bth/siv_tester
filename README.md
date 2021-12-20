@@ -22,7 +22,7 @@ optional arguments:
 *siv_tester* expects that you provide the path to your *siv* executable (SIVEXEC) and a path to a folder where test data and logs will be produced (ENVDIR). For example,
 
 ```
-test_siv.py -s ./siv.py -e orig
+./test_siv.py -s ./siv.py -e orig
 ```
 
 will attemp to execute a file called `siv.py` located in the current directory. Furthermore, it will create a folder called `orig` in the current directory. The folder will store the test environment. In my testing environment, I create a `data` folder under `orig`, which the directory to be monitored. Then I instruct your SIV to place the report and DB files under `orig`:
